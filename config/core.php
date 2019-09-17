@@ -2,7 +2,17 @@
 // show error reporting
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
- 
+
+// set your default time-zone
+date_default_timezone_set('America/Sao_Paulo');
+
+// variables used for jwt
+$key = "example_key";
+$iss = "http://example.org";
+$aud = "http://example.com";
+$iat = 1356999524;
+$nbf = 1357000000;
+
 // home page url
 $home_url="http://localhost/restapi/";
  
